@@ -25,9 +25,7 @@ Template para criação de projetos em nodejs usando typescript e testes automat
 
 <div id="recursos"></div>
 
-- [x] Configuração para Typescript
-- [x] Configuração para modules
-- [x] Configuração para Testes unitarios
+- [x] Visualizar Contatos recebidos
 
 ## License
 
