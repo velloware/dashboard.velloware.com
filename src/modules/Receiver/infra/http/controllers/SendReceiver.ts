@@ -16,6 +16,8 @@ export class SendReceiver {
     const receiverSend = new ReceiverSend(new Telegraf(Token), ChatId);
     const reciverSending = await receiverSend.sendReceiver(ReceiverProps);
 
-    return response.json(reciverSending);
+    return response.json({
+      "message": "send"    
+    });
   }
 }
