@@ -4,12 +4,14 @@ import {
 import 'express-async-errors';
 
 import Receiver from './Receiver.routes';
+import Notification from './Notification.routes';
 
 export const routesCreator = Router();
 
 const routes = Router();
 
 routes.use('/receiver', Receiver);
+routes.use('/notification', Notification);
 
 routes.use('/', (response: Response) => {
   response.send({
