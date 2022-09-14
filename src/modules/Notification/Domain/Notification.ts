@@ -11,9 +11,8 @@ export class Notification {
   }
 
   public touchFormatter(): string {
-    return `🔔Vello-Dash 🐱‍👤
-${this.message}
-    `;
+    return `🔹Velloware Dashboard🔹
+${this.message}`;
   }
 
 }
