@@ -1,0 +1,640 @@
+[
+  {
+    "pid": 196847,
+    "name": "agendator - Server",
+    "pm2_env": {
+      "exit_code": 0,
+      "script": "./dist/server.js",
+      "prev_restart_delay": 0,
+      "node_version": "16.16.0",
+      "versioning": {
+        "type": "git",
+        "url": "https://github.com/velloware/Agendator",
+        "revision": "7abb933130cb7e1af5c7a21201c0f4aeeb8d0df7",
+        "comment": "Merge pull request #45 from velloware/44-create-test-for-project-also-controllers-and-auth\n\nCreate test",
+        "unstaged": true,
+        "branch": "main",
+        "remotes": [
+          "origin"
+        ],
+        "remote": "origin",
+        "branch_exists_on_remote": true,
+        "ahead": false,
+        "next_rev": null,
+        "prev_rev": null,
+        "update_time": "2022-09-15T19:21:38.285Z",
+        "repo_path": "/var/www/agendator-backend.velloware.com"
+      },
+      "version": "1.0.0",
+      "_pm2_version": "5.2.0",
+      "unstable_restarts": 0,
+      "restart_time": 6,
+      "pm_id": 10,
+      "created_at": 1663269698073,
+      "axm_dynamic": {},
+      "axm_options": {
+        "error": true,
+        "heapdump": true,
+        "feature.profiler.heapsnapshot": false,
+        "feature.profiler.heapsampling": true,
+        "feature.profiler.cpu_js": true,
+        "latency": true,
+        "catchExceptions": true,
+        "profiling": true,
+        "metrics": {
+          "http": true,
+          "runtime": true,
+          "eventLoop": true,
+          "network": false,
+          "v8": true
+        },
+        "standalone": false,
+        "tracing": {
+          "outbound": false,
+          "enabled": false
+        },
+        "module_conf": {},
+        "apm": {
+          "version": "5.0.0",
+          "type": "node"
+        },
+        "module_name": "agendator - Server",
+        "module_version": "5.2.0"
+      },
+      "axm_monitor": {
+        "Used Heap Size": {
+          "value": "22.03",
+          "type": "internal/v8/heap/used",
+          "unit": "MiB",
+          "historic": true
+        },
+        "Heap Usage": {
+          "value": 94.5,
+          "type": "internal/v8/heap/usage",
+          "unit": "%",
+          "historic": true
+        },
+        "Heap Size": {
+          "value": "23.32",
+          "type": "internal/v8/heap/total",
+          "unit": "MiB",
+          "historic": true
+        },
+        "Event Loop Latency p95": {
+          "value": "1.07",
+          "type": "internal/libuv/latency/p95",
+          "unit": "ms",
+          "historic": true
+        },
+        "Event Loop Latency": {
+          "value": "0.33",
+          "type": "internal/libuv/latency/p50",
+          "unit": "ms",
+          "historic": true
+        },
+        "Active handles": {
+          "value": 1,
+          "type": "internal/libuv/handles",
+          "historic": true
+        },
+        "Active requests": {
+          "value": 0,
+          "type": "internal/libuv/requests",
+          "historic": true
+        },
+        "HTTP": {
+          "value": 0,
+          "type": "internal/http/builtin/reqs",
+          "unit": "req/min",
+          "historic": true
+        },
+        "HTTP P95 Latency": {
+          "value": 6,
+          "type": "internal/http/builtin/latency/p95",
+          "unit": "ms",
+          "historic": true
+        },
+        "HTTP Mean Latency": {
+          "value": 6,
+          "type": "internal/http/builtin/latency/p50",
+          "unit": "ms",
+          "historic": true
+        }
+      },
+      "axm_actions": [
+        {
+          "action_name": "km:heapdump",
+          "action_type": "internal",
+          "arity": 2
+        },
+        {
+          "action_name": "km:cpu:profiling:start",
+          "action_type": "internal",
+          "arity": 2
+        },
+        {
+          "action_name": "km:cpu:profiling:stop",
+          "action_type": "internal",
+          "arity": 1
+        },
+        {
+          "action_name": "km:heap:sampling:start",
+          "action_type": "internal",
+          "arity": 2
+        },
+        {
+          "action_name": "km:heap:sampling:stop",
+          "action_type": "internal",
+          "arity": 1
+        }
+      ],
+      "pm_uptime": 1663269698187,
+      "status": "offline",
+      "unique_id": "c646b18e-efb6-4d25-a94a-baf2f19ac19e",
+      "SHELL": "/bin/bash",
+      "NVM_INC": "/root/.nvm/versions/node/v16.16.0/include/node",
+      "PWD": "/var/www/agendator-backend.velloware.com",
+      "LOGNAME": "root",
+      "MOTD_SHOWN": "pam",
+      "HOME": "/root",
+      "SSH_CONNECTION": "20.185.35.15 1029 191.101.0.111 22",
+      "NVM_DIR": "/root/.nvm",
+      "USER": "root",
+      "SHLVL": "1",
+      "NVM_CD_FLAGS": "",
+      "SSH_CLIENT": "20.185.35.15 1029 22",
+      "PATH": "/root/.nvm/versions/node/v16.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+      "NVM_BIN": "/root/.nvm/versions/node/v16.16.0/bin",
+      "OLDPWD": "/root",
+      "_": "/root/.nvm/versions/node/v16.16.0/bin/pm2",
+      "PM2_USAGE": "CLI",
+      "PM2_JSON_PROCESSING": "true",
+      "NODE_ENV": "production",
+      "PM2_HOME": "/root/.pm2",
+      "agendator - Server": "{}",
+      "NODE_APP_INSTANCE": 0,
+      "vizion_running": false,
+      "km_link": true,
+      "pm_pid_path": "/root/.pm2/pids/agendator---Server-10.pid",
+      "pm_err_log_path": "/root/.pm2/logs/agendator---Server-error.log",
+      "pm_out_log_path": "/root/.pm2/logs/agendator---Server-out.log",
+      "exec_mode": "cluster_mode",
+      "exec_interpreter": "node",
+      "pm_cwd": "/var/www/agendator-backend.velloware.com",
+      "pm_exec_path": "/var/www/agendator-backend.velloware.com/dist/server.js",
+      "node_args": [],
+      "name": "agendator - Server",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "instances": 0,
+      "merge_logs": true,
+      "vizion": true,
+      "autorestart": true,
+      "instance_var": "NODE_APP_INSTANCE",
+      "pmx": true,
+      "automation": true,
+      "treekill": true,
+      "username": "root",
+      "windowsHide": true,
+      "kill_retry_time": 100,
+      "namespace": "default"
+    },
+    "pm_id": 10,
+    "monit": {
+      "memory": 80019456,
+      "cpu": 0
+    }
+  },
+  {
+    "pid": 196863,
+    "name": "agendator - Server",
+    "pm2_env": {
+      "exit_code": 0,
+      "script": "./dist/server.js",
+      "prev_restart_delay": 0,
+      "node_version": "16.16.0",
+      "versioning": {
+        "type": "git",
+        "url": "https://github.com/velloware/Agendator",
+        "revision": "7abb933130cb7e1af5c7a21201c0f4aeeb8d0df7",
+        "comment": "Merge pull request #45 from velloware/44-create-test-for-project-also-controllers-and-auth\n\nCreate test",
+        "unstaged": true,
+        "branch": "main",
+        "remotes": [
+          "origin"
+        ],
+        "remote": "origin",
+        "branch_exists_on_remote": true,
+        "ahead": false,
+        "next_rev": null,
+        "prev_rev": null,
+        "update_time": "2022-09-15T19:21:38.502Z",
+        "repo_path": "/var/www/agendator-backend.velloware.com"
+      },
+      "version": "1.0.0",
+      "_pm2_version": "5.2.0",
+      "unstable_restarts": 0,
+      "restart_time": 6,
+      "pm_id": 11,
+      "created_at": 1663269698236,
+      "axm_dynamic": {},
+      "axm_options": {
+        "error": true,
+        "heapdump": true,
+        "feature.profiler.heapsnapshot": false,
+        "feature.profiler.heapsampling": true,
+        "feature.profiler.cpu_js": true,
+        "latency": true,
+        "catchExceptions": true,
+        "profiling": true,
+        "metrics": {
+          "http": true,
+          "runtime": true,
+          "eventLoop": true,
+          "network": false,
+          "v8": true
+        },
+        "standalone": false,
+        "tracing": {
+          "outbound": false,
+          "enabled": false
+        },
+        "module_conf": {},
+        "apm": {
+          "version": "5.0.0",
+          "type": "node"
+        },
+        "module_name": "agendator - Server",
+        "module_version": "5.2.0"
+      },
+      "axm_monitor": {
+        "Used Heap Size": {
+          "value": "22.22",
+          "type": "internal/v8/heap/used",
+          "unit": "MiB",
+          "historic": true
+        },
+        "Heap Usage": {
+          "value": 94.29,
+          "type": "internal/v8/heap/usage",
+          "unit": "%",
+          "historic": true
+        },
+        "Heap Size": {
+          "value": "23.57",
+          "type": "internal/v8/heap/total",
+          "unit": "MiB",
+          "historic": true
+        },
+        "Event Loop Latency p95": {
+          "value": "1.02",
+          "type": "internal/libuv/latency/p95",
+          "unit": "ms",
+          "historic": true
+        },
+        "Event Loop Latency": {
+          "value": "0.30",
+          "type": "internal/libuv/latency/p50",
+          "unit": "ms",
+          "historic": true
+        },
+        "Active handles": {
+          "value": 1,
+          "type": "internal/libuv/handles",
+          "historic": true
+        },
+        "Active requests": {
+          "value": 0,
+          "type": "internal/libuv/requests",
+          "historic": true
+        },
+        "HTTP": {
+          "value": 0,
+          "type": "internal/http/builtin/reqs",
+          "unit": "req/min",
+          "historic": true
+        },
+        "HTTP P95 Latency": {
+          "value": 8,
+          "type": "internal/http/builtin/latency/p95",
+          "unit": "ms",
+          "historic": true
+        },
+        "HTTP Mean Latency": {
+          "value": 8,
+          "type": "internal/http/builtin/latency/p50",
+          "unit": "ms",
+          "historic": true
+        }
+      },
+      "axm_actions": [
+        {
+          "action_name": "km:heapdump",
+          "action_type": "internal",
+          "arity": 2
+        },
+        {
+          "action_name": "km:cpu:profiling:start",
+          "action_type": "internal",
+          "arity": 2
+        },
+        {
+          "action_name": "km:cpu:profiling:stop",
+          "action_type": "internal",
+          "arity": 1
+        },
+        {
+          "action_name": "km:heap:sampling:start",
+          "action_type": "internal",
+          "arity": 2
+        },
+        {
+          "action_name": "km:heap:sampling:stop",
+          "action_type": "internal",
+          "arity": 1
+        }
+      ],
+      "pm_uptime": 1663269698375,
+      "status": "online",
+      "unique_id": "c646b18e-efb6-4d25-a94a-baf2f19ac19e",
+      "SHELL": "/bin/bash",
+      "NVM_INC": "/root/.nvm/versions/node/v16.16.0/include/node",
+      "PWD": "/var/www/agendator-backend.velloware.com",
+      "LOGNAME": "root",
+      "MOTD_SHOWN": "pam",
+      "HOME": "/root",
+      "SSH_CONNECTION": "20.185.35.15 1029 191.101.0.111 22",
+      "NVM_DIR": "/root/.nvm",
+      "USER": "root",
+      "SHLVL": "1",
+      "NVM_CD_FLAGS": "",
+      "SSH_CLIENT": "20.185.35.15 1029 22",
+      "PATH": "/root/.nvm/versions/node/v16.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+      "NVM_BIN": "/root/.nvm/versions/node/v16.16.0/bin",
+      "OLDPWD": "/root",
+      "_": "/root/.nvm/versions/node/v16.16.0/bin/pm2",
+      "PM2_USAGE": "CLI",
+      "PM2_JSON_PROCESSING": "true",
+      "NODE_ENV": "production",
+      "PM2_HOME": "/root/.pm2",
+      "agendator - Server": "{}",
+      "NODE_APP_INSTANCE": 1,
+      "vizion_running": false,
+      "km_link": true,
+      "pm_pid_path": "/root/.pm2/pids/agendator---Server-11.pid",
+      "pm_err_log_path": "/root/.pm2/logs/agendator---Server-error.log",
+      "pm_out_log_path": "/root/.pm2/logs/agendator---Server-out.log",
+      "exec_mode": "cluster_mode",
+      "exec_interpreter": "node",
+      "pm_cwd": "/var/www/agendator-backend.velloware.com",
+      "pm_exec_path": "/var/www/agendator-backend.velloware.com/dist/server.js",
+      "node_args": [],
+      "name": "agendator - Server",
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "instances": 0,
+      "merge_logs": true,
+      "vizion": true,
+      "autorestart": true,
+      "instance_var": "NODE_APP_INSTANCE",
+      "pmx": true,
+      "automation": true,
+      "treekill": true,
+      "username": "root",
+      "windowsHide": true,
+      "kill_retry_time": 100,
+      "namespace": "default"
+    },
+    "pm_id": 11,
+    "monit": {
+      "memory": 79953920,
+      "cpu": 0
+    }
+  },
+  {
+    "pid": 192824,
+    "name": "Velloware Dash Server",
+    "pm2_env": {
+      "namespace": "default",
+      "kill_retry_time": 100,
+      "windowsHide": true,
+      "username": "root",
+      "treekill": true,
+      "automation": true,
+      "pmx": true,
+      "instance_var": "NODE_APP_INSTANCE",
+      "autorestart": true,
+      "vizion": true,
+      "merge_logs": true,
+      "env": {
+        "Velloware Dash Server": "{}",
+        "PM2_HOME": "/root/.pm2",
+        "NODE_ENV": "production",
+        "PM2_JSON_PROCESSING": "true",
+        "PM2_USAGE": "CLI",
+        "_": "/root/.nvm/versions/node/v16.16.0/bin/pm2",
+        "OLDPWD": "/root",
+        "NVM_BIN": "/root/.nvm/versions/node/v16.16.0/bin",
+        "PATH": "/root/.nvm/versions/node/v16.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+        "SSH_CLIENT": "20.225.87.251 1989 22",
+        "NVM_CD_FLAGS": "",
+        "SHLVL": "1",
+        "USER": "root",
+        "NVM_DIR": "/root/.nvm",
+        "SSH_CONNECTION": "20.225.87.251 1989 191.101.0.111 22",
+        "HOME": "/root",
+        "MOTD_SHOWN": "pam",
+        "LOGNAME": "root",
+        "PWD": "/var/www/dashboard.velloware.com/Velloware-dash",
+        "NVM_INC": "/root/.nvm/versions/node/v16.16.0/include/node",
+        "SHELL": "/bin/bash",
+        "unique_id": "22954578-b472-4efc-a07b-d80c7a6f273b"
+      },
+      "name": "Velloware Dash Server",
+      "node_args": [],
+      "pm_exec_path": "/var/www/dashboard.velloware.com/Velloware-dash/dist/server.js",
+      "pm_cwd": "/var/www/dashboard.velloware.com/Velloware-dash",
+      "exec_interpreter": "node",
+      "exec_mode": "fork_mode",
+      "instances": 1,
+      "pm_out_log_path": "/root/.pm2/logs/Velloware-Dash-Server-out.log",
+      "pm_err_log_path": "/root/.pm2/logs/Velloware-Dash-Server-error.log",
+      "pm_pid_path": "/root/.pm2/pids/Velloware-Dash-Server-12.pid",
+      "km_link": true,
+      "vizion_running": false,
+      "NODE_APP_INSTANCE": 0,
+      "Velloware Dash Server": "{}",
+      "PM2_HOME": "/root/.pm2",
+      "NODE_ENV": "production",
+      "PM2_JSON_PROCESSING": "true",
+      "PM2_USAGE": "CLI",
+      "_": "/root/.nvm/versions/node/v16.16.0/bin/pm2",
+      "OLDPWD": "/root",
+      "NVM_BIN": "/root/.nvm/versions/node/v16.16.0/bin",
+      "PATH": "/root/.nvm/versions/node/v16.16.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin",
+      "SSH_CLIENT": "20.225.87.251 1989 22",
+      "NVM_CD_FLAGS": "",
+      "SHLVL": "1",
+      "USER": "root",
+      "NVM_DIR": "/root/.nvm",
+      "SSH_CONNECTION": "20.225.87.251 1989 191.101.0.111 22",
+      "HOME": "/root",
+      "MOTD_SHOWN": "pam",
+      "LOGNAME": "root",
+      "PWD": "/var/www/dashboard.velloware.com/Velloware-dash",
+      "NVM_INC": "/root/.nvm/versions/node/v16.16.0/include/node",
+      "SHELL": "/bin/bash",
+      "unique_id": "22954578-b472-4efc-a07b-d80c7a6f273b",
+      "status": "online",
+      "pm_uptime": 1663125530563,
+      "axm_actions": [
+        {
+          "action_name": "km:heapdump",
+          "action_type": "internal",
+          "arity": 2
+        },
+        {
+          "action_name": "km:cpu:profiling:start",
+          "action_type": "internal",
+          "arity": 2
+        },
+        {
+          "action_name": "km:cpu:profiling:stop",
+          "action_type": "internal",
+          "arity": 1
+        },
+        {
+          "action_name": "km:heap:sampling:start",
+          "action_type": "internal",
+          "arity": 2
+        },
+        {
+          "action_name": "km:heap:sampling:stop",
+          "action_type": "internal",
+          "arity": 1
+        }
+      ],
+      "axm_monitor": {
+        "Used Heap Size": {
+          "value": "15.24",
+          "type": "internal/v8/heap/used",
+          "unit": "MiB",
+          "historic": true
+        },
+        "Heap Usage": {
+          "value": 72.82,
+          "type": "internal/v8/heap/usage",
+          "unit": "%",
+          "historic": true
+        },
+        "Heap Size": {
+          "value": "20.93",
+          "type": "internal/v8/heap/total",
+          "unit": "MiB",
+          "historic": true
+        },
+        "Event Loop Latency p95": {
+          "value": "0.97",
+          "type": "internal/libuv/latency/p95",
+          "unit": "ms",
+          "historic": true
+        },
+        "Event Loop Latency": {
+          "value": "0.24",
+          "type": "internal/libuv/latency/p50",
+          "unit": "ms",
+          "historic": true
+        },
+        "Active handles": {
+          "value": 4,
+          "type": "internal/libuv/handles",
+          "historic": true
+        },
+        "Active requests": {
+          "value": 0,
+          "type": "internal/libuv/requests",
+          "historic": true
+        },
+        "HTTP": {
+          "value": 0,
+          "type": "internal/http/builtin/reqs",
+          "unit": "req/min",
+          "historic": true
+        },
+        "HTTP P95 Latency": {
+          "value": 15.29999999999999,
+          "type": "internal/http/builtin/latency/p95",
+          "unit": "ms",
+          "historic": true
+        },
+        "HTTP Mean Latency": {
+          "value": 1,
+          "type": "internal/http/builtin/latency/p50",
+          "unit": "ms",
+          "historic": true
+        }
+      },
+      "axm_options": {
+        "error": true,
+        "heapdump": true,
+        "feature.profiler.heapsnapshot": false,
+        "feature.profiler.heapsampling": true,
+        "feature.profiler.cpu_js": true,
+        "latency": true,
+        "catchExceptions": true,
+        "profiling": true,
+        "metrics": {
+          "http": true,
+          "runtime": true,
+          "eventLoop": true,
+          "network": false,
+          "v8": true
+        },
+        "standalone": false,
+        "tracing": {
+          "outbound": false,
+          "enabled": false
+        },
+        "module_conf": {},
+        "apm": {
+          "version": "5.0.0",
+          "type": "node"
+        },
+        "module_name": "Velloware Dash Server",
+        "module_version": "5.2.0"
+      },
+      "axm_dynamic": {},
+      "created_at": 1663125530563,
+      "pm_id": 12,
+      "restart_time": 0,
+      "unstable_restarts": 0,
+      "version": "1.0.0",
+      "versioning": {
+        "type": "git",
+        "url": "https://github.com/velloware/Velloware-dash",
+        "revision": "2e894470ebf4afd5bf0256c9efb7b02f3d069c75",
+        "comment": "Create deploy.yml",
+        "unstaged": false,
+        "branch": "main",
+        "remotes": [
+          "origin"
+        ],
+        "remote": "origin",
+        "branch_exists_on_remote": true,
+        "ahead": false,
+        "next_rev": null,
+        "prev_rev": null,
+        "update_time": "2022-09-14T03:18:50.638Z",
+        "repo_path": "/var/www/dashboard.velloware.com/Velloware-dash"
+      },
+      "node_version": "16.16.0"
+    },
+    "pm_id": 12,
+    "monit": {
+      "memory": 65101824,
+      "cpu": 0
+    }
+  }
+]
