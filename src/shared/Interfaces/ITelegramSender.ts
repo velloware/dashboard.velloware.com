@@ -1,2 +1,2 @@
-import {ISend, ITelefraf } from '../../modules/Telegraf/ITelegraf';
-export {ISend, ITelefraf } from '../../modules/Telegraf/ITelegraf';
+import { ISend, ITelefraf } from '../../infra/Telegraf/ITelegraf';
+export { ISend, ITelefraf } from '../../infra/Telegraf/ITelegraf';

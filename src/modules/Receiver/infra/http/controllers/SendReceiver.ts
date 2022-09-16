@@ -1,6 +1,6 @@
 import { Response, Request } from 'express';
 import { ReceiverSend, IReceiver } from '../../../Receiver';
-import { Telegraf } from '../../../../Telegraf/telegraf';
+import { Telegraf } from '../../../../../infra/Telegraf/telegraf';
 
 export class SendReceiver {
   public async send(

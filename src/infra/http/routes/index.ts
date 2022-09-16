@@ -12,6 +12,7 @@ const routes = Router();
 
 routes.use('/receiver', Receiver);
 routes.use('/notification', Notification);
+routes.use('/status', Notification);
 
 routes.use('/', (response: Response) => {
   response.send({

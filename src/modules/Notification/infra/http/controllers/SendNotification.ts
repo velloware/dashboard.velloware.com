@@ -1,6 +1,6 @@
 import { Response, Request } from 'express';
 import { NotificationSend, INotification } from '../../../Notification';
-import { Telegraf } from '../../../../Telegraf/telegraf';
+import { Telegraf } from '../../../../../infra/Telegraf/telegraf';
 
 export class SendNotification {
   public async send(
