@@ -1,5 +1,6 @@
 import dotenv from 'dotenv';
 import ServerHttp from './infra/http/server';
+import { checkStatus } from './modules/Status/Status';
 
 dotenv.config();
 
@@ -8,6 +9,7 @@ process.title = 'Velloware Dash - server';
 const serverHttp = new ServerHttp(process.env.PORT || '5000');
 
 serverHttp.init();
+checkStatus();
 
 process.on('SIGTERM', () => {
   console.log('> Server ending after close all connections - ', new Date().toISOString());
