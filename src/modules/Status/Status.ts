@@ -10,7 +10,7 @@ export const checkStatus = async () => {
 
   cron.schedule('* * * * *', async () => {
     getApplications().map((app: Application) => {
-      if (app.status !== 'online' && !LogErrorSendeds.includes(app.pid)) {
+      if (app.status !== 'online' && !LogErrorSendeds.includes(app.pm_id)) {
         SendNotification.send(`
 ❗Application {${app.name}} is ${app.status}❗
         
@@ -21,8 +21,8 @@ CPU: ${app.cpu}
 Memory: ${app.memory}
 Mode: ${app.mode}`);
 
-        LogErrorSendeds.push(app.pid);
-      } else if (app.status === 'online' && LogErrorSendeds.includes(app.pid)) {
+        LogErrorSendeds.push(app.pm_id);
+      } else if (app.status === 'online' && LogErrorSendeds.includes(app.pm_id)) {
         SendNotification.send(`
 ✅Application {${app.name}} is ${app.status}✅
 
@@ -33,7 +33,7 @@ CPU: ${app.cpu}
 Memory: ${app.memory}
 Mode: ${app.mode}`);
 
-        LogErrorSendeds = LogErrorSendeds.filter((pid: Number) => pid !== app.pid);
+        LogErrorSendeds = LogErrorSendeds.filter((pm_id: Number) => pm_id !== app.pm_id);
 
       }
 
