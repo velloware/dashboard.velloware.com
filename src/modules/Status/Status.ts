@@ -15,7 +15,7 @@ export const checkStatus = async () => {
 ❗Application {${app.name}} is ${app.status}❗
         
 Server: ${app.serverName}
-Uptime: ${app.uptime}
+Uptime: ${new Date(app.uptime).toLocaleString()}
 Restart Count: ${app.restartCount}
 CPU: ${app.cpu}
 Memory: ${app.memory}
@@ -27,7 +27,7 @@ Mode: ${app.mode}`);
 ✅Application {${app.name}} is ${app.status}✅
 
 Server: ${app.serverName}
-Uptime: ${app.uptime}
+Uptime: ${new Date(app.uptime).toLocaleString()}
 Restart Count: ${app.restartCount}
 CPU: ${app.cpu}
 Memory: ${app.memory}
@@ -53,7 +53,7 @@ Mode: ${app.mode}`);
 💫Application Report - ${app.name} is ${app.status}💫
     
 Server: ${app.serverName}
-Uptime: ${app.uptime}
+Uptime: ${new Date(app.uptime).toLocaleString()}
 Restart Count: ${app.restartCount}
 CPU: ${app.cpu}
 Memory: ${app.memory}
