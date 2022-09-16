@@ -24,8 +24,8 @@ interface IRawJlist {
 }
 
 const getRawProps = (): IRawJlist[] => {
-  // const rawOutout = execSync('pm2 jlist');
-  const rawOutout = execSync('cat src/modules/Status/Test/Mock/jlist.json');
+  const rawOutout = execSync('pm2 jlist');
+  // const rawOutout = execSync('cat src/modules/Status/Test/Mock/jlist.json');
   const JLIST: IRawJlist[] = JSON.parse(rawOutout.toString());
   return JLIST;
 }
