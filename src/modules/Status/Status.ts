@@ -45,19 +45,19 @@ Mode: ${app.mode}`);
   });
 
 
-//  cron.schedule('0 0 */6 * * *', async () => {
-/*    getApplications().map((app: Application) => {
-      SendNotification.send(`
-💫Application Report - ${app.name} is ${app.status}💫
-    
-Server: ${app.serverName}
-Uptime: ${((app.uptime / 1000) / 60) / 60}m
-Restart Count: ${app.restartCount}
-CPU: ${app.cpu}
-Memory: ${app.memory}
-Mode: ${app.mode}`);
+  //  cron.schedule('0 0 */6 * * *', async () => {
+  /*    getApplications().map((app: Application) => {
+        SendNotification.send(`
+  💫Application Report - ${app.name} is ${app.status}💫
+      
+  Server: ${app.serverName}
+  Uptime: ${((app.uptime / 1000) / 60) / 60}m
+  Restart Count: ${app.restartCount}
+  CPU: ${app.cpu}
+  Memory: ${app.memory}
+  Mode: ${app.mode}`);
+      });
+  
     });
-
-  });
+    */
 };
-*/
