@@ -6,5 +6,6 @@ const sendNotification = new SendNotification();
 const routes = Router();
 
 routes.post('/', sendNotification.send);
+routes.post('/webhook', sendNotification.sendWebhook);
 
 export default routes;
