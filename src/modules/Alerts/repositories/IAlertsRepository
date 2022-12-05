@@ -1,0 +1,9 @@
+import { INewRelicAlert, NewRelicAlert } from '../Domain/NewRelicAlert';
+
+export interface IAlertRepository {
+  exists(id: string): Promise<boolean>;
+  findAlertById(alertId: string): Promise<NewRelicAlert | null>;
+  findAlertByOwnerId(userId: string): Promise<NewRelicAlert[] | NewRelicAlert | null>;
+  save(alert: NewRelicAlert): Promise<void>;
+  create(alert: NewRelicAlert): Promise<void>;
+}
