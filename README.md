@@ -1,34 +1,93 @@
-<h1 align="center">Template-nodejs-typescript-dev</h1>
-
 <p align="center">
-  <a href="#about">Sobre este projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#recursos">Recursoso</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#license">License</a>
+   <img src="https://avatars.githubusercontent.com/u/105833248?s=400&u=23db20e40ccd72d71fa4e22600335d2c8518a8b1&v=4" alt="vello-dash" width="280"/>
 </p>
 
-## :notebook: Sobre este projeto
+<p align="center">	
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/velloware/vello-dash?color=774DD6">
 
-<div id="about"></div>
+  <a href="https://github.com/velloware/vello-dash/commits">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/velloware/vello-dash?color=774DD6">
+  </a> 
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-8257E5">
+  <a href="https://github.com/velloware/vello-dash/stargazers">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/velloware/vello-dash?color=8257E5&logo=github">
+  </a>
+</p>
 
-Template para criação de projetos em nodejs usando typescript e testes automatizados.
+<p align="center">
+    <a href="README.md">English</a>
+  
+ </p>
 
-## Tecnologias 🐱‍🏍🎂
+# :pushpin: Table of Contents
 
-<div id="tecnologias"></div>
+- [Technologies](#computer-technologies)
+- [How Works Application](#how-works)
+- [Features](#rocket-features)
+- [How to Run](#construction_worker-how-to-run)
+- [Contributing](#tada-contributing)
+- [License](#closed_book-license)
 
-- [Node](http://nodejs.org/) - Nodejs
+# :computer: Technologies
+
+This project was made using the follow technologies:
+
 - [typescript](https://www.typescriptlang.org/) - Super Javascript
+- [Javascript](https://www.typescriptlang.org/)
+- [Nodejs](http://nodejs.org/) - Nodejs
 - [Jest](https://jestjs.io/) - UnitTest
+- [ESlint](https://eslint.org/) - Linter
+- [Prettier](https://prettier.io/) - Code Formatter
 
-### Recursos
+# :rocket: Features
 
-<div id="recursos"></div>
+- [x] Auto Deploy using Github Actions
+- [x] Revicer Notification
+- [x] Notification API to telegram
+- [x] Notification WEBHOOK
+- [x] Monitor PM2 APPs status
 
-- [x] Visualizar Contatos recebidos
+# how works
 
-## License
+This application is backend.
 
-<div id="license"></div>
+- You can run this app in your server to monitor PM2 instances and using API to notify in telegram group.
 
-MIT [LICENSE](LICENSE.md)
+# :construction_worker: How to run
+
+### 💻 Run Web Project
+
+```bash
+# Clone Repository
+$ git clone https://github.com/velloware/vello-dash
+
+# Install Dependencies
+$ npm ci i
+
+# Run migrations Prisma
+$ touch .env
+
+PORT=YOU_PORT
+BOT_TOKEN=YOUR_TOKEN_BOT_TELEGRAM
+CHAT_ID=CHAT_ID_IN_TELEGRAM
+
+# Run Aplication
+$ npm run dev
+```
+
+### Run Tests
+
+```bash
+# Run Test
+$ npm run test
+```
+
+
+# :tada: contributing
+
+**file a new issue** with a respective title and description on the the [vello-dash](https://github.com/velloware/vello-dash/issues) repository. If you already found a solution to your problem, **i would love to review your pull request**!
+
+# :closed_book: License
+
+Released in 2022 :closed_book: License
+This project is under the [MIT license](./LICENSE).
