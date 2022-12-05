@@ -15,18 +15,15 @@ model Alert {
   title    String
   priority String
   impactedEntities String
-  totalIncidents Number
+  totalIncidents Int
   state String
   trigger String
   isCorrelated Boolean
-  issueUrl String
-  issueUrl String
-  issueUrl String
   issueUrl String
   createdAt String
   updatedAt String
   sources String
   alertPolicyNames String
-  alertConditionNames String[]
+  alertConditionNames String
   workflowName String
 }
