@@ -10,7 +10,7 @@
   </a> 
   <img alt="License" src="https://img.shields.io/badge/license-MIT-8257E5">
   <a href="https://github.com/velloware/vello-dash/stargazers">
-    <img alt="Stargazers" src="https://img.shields.io/github/stars/velloware/vello-dash?color=8257E5&logo=github">
+    <img alt="Stargazers" src="https://img.shields.io/github/stars/velloware/vello-dash?color=8257E4&logo=github">
   </a>
 </p>
 
