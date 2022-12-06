@@ -46,6 +46,7 @@ This project was made using the follow technologies:
 - [x] Notification API to telegram
 - [x] Notification WEBHOOK
 - [x] Monitor PM2 APPs status
+- [x] New Relic Alerts Template message
 
 # how works
 
