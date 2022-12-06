@@ -9,6 +9,7 @@ export class SendNotification {
 
     const NoSendNotificationProps: INotification = {
       message: TextToSend,
+      data: {},
     };
 
     const Token = String(process.env.BOT_TOKEN) || 'BOT_TOKEN_HERE';

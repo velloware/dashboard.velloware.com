@@ -1,5 +1,5 @@
 export interface INewRelicAlert {
-  id: number;
+  id: string;
   issueUrl: string;
   title: string;
   priority: string;
@@ -12,7 +12,7 @@ export interface INewRelicAlert {
   updatedAt: string;
   sources: string;
   alertPolicyNames: string;
-  alertConditionNames: string[];
+  alertConditionNames: string;
   workflowName: string;
 }
 

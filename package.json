@@ -11,21 +11,12 @@
     "test": "jest",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watchAll --maxWorkers=1",
-    "test:clear": "jest --clearCache",
-    "prisma:dev": "npx prisma migrate dev",
-    "prisma:reset": "npx prisma migrate reset",
-    "prisma:createOnly": "npx prisma migrate dev --create-only",
-    "prisma:deploy": "npx prisma migrate deploy",
-    "prisma:seed": "npx prisma db seed"
-  },
-  "prisma": {
-    "seed": "node prisma/seed.mjs"
+    "test:clear": "jest --clearCache"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "@prisma/client": "^4.7.1",
     "@types/cors": "^2.8.12",
     "@types/express": "^4.17.13",
     "@types/jest": "^27.4.1",
@@ -41,7 +32,6 @@
     "dotenv": "^16.0.1",
     "express-async-errors": "^3.1.1",
     "node-cron": "^3.0.2",
-    "prisma": "^4.7.1",
     "telegraf": "^4.8.6"
   }
 }
