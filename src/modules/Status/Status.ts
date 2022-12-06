@@ -1,5 +1,5 @@
-import { getApplications } from './Application/Applications';
-import { Application } from './Application/Domain/Application';
+import { getApplications } from './Applications/Pm2Applications';
+import { Application } from './Applications/Domain/Pm2Application';
 import { SendNotification } from '../Notification/useNotification';
 import cron from 'node-cron';
 

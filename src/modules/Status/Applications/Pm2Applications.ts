@@ -1,5 +1,5 @@
 import { execSync } from 'child_process';
-import { Application } from '../Application/Domain/Application';
+import { Application } from './Domain/Pm2Application';
 
 interface IRawJlist {
   pid: number;
