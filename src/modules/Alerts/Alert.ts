@@ -7,7 +7,7 @@ export class Alert {
   get alertMessage() {
     return `\nAlert: ${this.alert.title}
 Priority: ${this.alert.priority}
-State: ${this.alert.state} ${this.alert.state === 'ACTIVATED' ? '🟢' : '🔴'}
+State: ${this.alert.state} ${this.alert.state === 'ACTIVATED' ? '🔴' : '🟢'}
 Impacted Entities: ${this.alert.impactedEntities}
 Total Incidents: ${this.alert.totalIncidents}
 Trigger: ${this.alert.trigger}
