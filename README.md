@@ -12,7 +12,7 @@
   <a href="https://github.com/velloware/vello-dash/stargazers">
     <img alt="Stargazers" src="https://img.shields.io/github/stars/velloware/vello-dash?color=8257E4&logo=github">
   </a>
-</p>
+</p>   
 
 <p align="center">
     <a href="README.md">English</a>
