@@ -1,4 +1,4 @@
-name: Deploy - Production - Velloware-Dash-backend.velloware.com
+name: Deploy - Production - dashboard.velloware.com
 
 on:
   push:
@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           PORT: ${{ secrets.PORT }}
           source: '.'
-          target: '/var/www/dashboard.velloware.com/Velloware-dash/'
+          target: '/var/www/dashboard.velloware.com/'
           overwrite: true
       - name: Executing remote command
         uses: appleboy/ssh-action@master
@@ -30,7 +30,7 @@ jobs:
           PORT: ${{ secrets.PORT }}
           script: ls
 
-      - name: Deployng the project branch ${{ github.ref_name }} in /var/www/dashboard.velloware.com/Velloware-dash/
+      - name: Deployng the project branch ${{ github.ref_name }} in /var/www/dashboard.velloware.com/
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST }}
@@ -38,8 +38,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           PORT: ${{ secrets.PORT }}
           script: |
-            sudo chown -R $USER /var/www/dashboard.velloware.com/Velloware-dash/
-            cd /var/www/dashboard.velloware.com/Velloware-dash/
+            sudo chown -R $USER /var/www/dashboard.velloware.com/
+            cd /var/www/dashboard.velloware.com/
             export NVM_DIR="$HOME/.nvm"
             [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
             npm ci i
@@ -47,4 +47,4 @@ jobs:
             pm2 link ${{ secrets.PM2A }} ${{ secrets.PM2B }}
             pm2 delete Velloware Dash Server
             pm2 start ecosystem.config.js
-            curl --request POST --url https://dash.velloware.com/api/notification --header 'Content-Type: application/json' --data '{"message": "\nDeploing Velloware Backend - ⛑${{ github.ref_name }}📣📢\n on Vello-1-server (acess: dash.velloware.com)"}'
+            curl --request POST --url https://dashboard.velloware.com/api/notification --header 'Content-Type: application/json' --data '{"message": "\nDeploing Velloware Backend - ⛑${{ github.ref_name }}📣📢\n on Vello-1-server (acess: dashboard.velloware.com)"}'
