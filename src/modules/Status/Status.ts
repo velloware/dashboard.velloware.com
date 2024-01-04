@@ -45,7 +45,7 @@ Mode: ${app.mode}`);
   });
 
 
-  cron.schedule('0 */6 * * *', async () => {
+  cron.schedule('0 23 */2 * *', async () => {
    getApplications().map((app: Application) => {
         SendNotification.send(`
 Application - ${app.name} is ${app.status}
